@@ -1,0 +1,24 @@
+
+<table>
+  <tr>
+      Hospital List
+  </tr>
+  <tr>
+   <th>Department Name</th>
+   <th>Contact Number</th>
+   <th>View Department</th>
+  </tr>
+  <tr *ngFor="let hospital of hospitals">
+      <td>
+        {{hospital.hospitalname}}
+      </td>
+      <td>
+        {{hospital.contactnumber}}
+      </td>
+      <td>
+        <a routerLink="/department/{{hospital.hospitalname}}">View</a>
+      </td>
+  </tr>
+  
+</table>
+

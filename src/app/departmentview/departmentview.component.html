@@ -1,0 +1,27 @@
+
+<table>
+    <tr>
+        Hospital List
+    </tr>
+    <tr>
+        <button (click)="Sorting()">Sort By Department Name</button>
+        <button (click)="navigate()">Back</button>
+      </tr>
+    <tr>
+     <th>Department Name</th>
+     <th>Head Of Department</th>
+     <th>Contact Number</th>
+    </tr>
+    <tr *ngFor="let department of departments">
+        <td>
+          {{department.departmentname}}
+        </td>
+        <td>
+          {{department.head}}
+        </td>
+        <td>
+         {{department.contactnumber}}
+        </td>
+    </tr>
+    
+  </table>
